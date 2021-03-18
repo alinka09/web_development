@@ -1,0 +1,10 @@
+{
+  "request" : {
+    "urlPath" : "/mem",
+    "method" : "GET"
+  },
+  "response" : {
+    "status": 200,
+    "bodyFileName": "../__files/img.jpeg"
+  }
+}
