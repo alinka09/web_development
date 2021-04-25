@@ -1,8 +1,9 @@
 ## Домашка №5.
 
-ссылка на видео[https://drive.google.com/file/d/1qG9EmPWXEOmtvYe-ug5zMoGX5Ifpy0lz/view?usp=sharing]
+ссылка на видео[https://drive.google.com/file/d/1y9HKfRJRFpoM95NgkCeS7R8OoB0V2D1I/view?usp=sharing]
 
 Перешла на страницу https://docs.github.com/en/graphql/overview/explorer
+
 Авторизовалась. Далее через интерфейс выполнила следующие Query и Mutations.
 
 - Вывела список репозиториев для своего профиля
