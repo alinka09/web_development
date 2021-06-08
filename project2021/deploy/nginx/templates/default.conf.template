@@ -1,0 +1,40 @@
+server {
+    listen       80;
+    listen  [::]:80;
+    server_name  ${NGINX_CUSTOM_SERVER_NAME};
+
+    access_log  /var/log/nginx/host.access.log  main;
+    error_log  /var/log/nginx/host.error.log;
+
+    location / {
+        root   /data/www;
+        index  index.html index.htm;
+    }
+
+    location /img/ {
+
+            root /data/static;
+            expires           360d;
+            add_header Cache-Control "public";
+
+    }
+    location /docs/ {
+
+            root /data/static;
+            expires           360d;
+            add_header Cache-Control "public";
+
+    }
+    location /video/ {
+
+            root /data/static;
+            expires           360d;
+            add_header Cache-Control "public";
+
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
