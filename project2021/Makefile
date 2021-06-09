@@ -60,8 +60,7 @@ ifeq (installer, $(firstword $(MAKECMDGOALS)))
 endif
 
 installer:
-	winpty docker run --name installer -v /$(LOCALHOST_PROJECT_DIR)/app:/app --interactive --tty composer $(CURRENT)
-	winpty docker cp installer:app $(LOCALHOST_PROJECT_DIR)
+	winpty docker run --name installer -v /$(LOCALHOST_PROJECT_DIR):/app --interactive --tty composer $(CURRENT)
 	winpty docker rm installer
 
 .PHONY: installer
