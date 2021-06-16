@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/web-hw/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/composer" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/web-hw/vendor/symfony/yaml" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
+</project>

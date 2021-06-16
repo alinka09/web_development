@@ -1,0 +1,45 @@
+security:
+    enable_authenticator_manager: true
+    encoders:
+        Symfony\Component\Security\Core\User\User: 'auto'
+
+
+    providers:
+        backend_users:
+            memory:
+                users:
+                    user: { password: '$argon2id$v=19$m=65536,t=4,p=1$WRjFCNbmvrRednJbJdyP3A$1tczVve/Zk3EA07eBtRtY5m3zNWUSevDd2wcdKiw78Q', roles: [ 'ROLE_USER' ] }
+                    admin: { password: '$argon2id$v=19$m=65536,t=4,p=1$a7/gPtznIqJGsk53LFEKEQ$2frMIXoaWUoO/9AFY27V81OPhgaYGh6zEkP8+j6Aj/U', roles: [ 'ROLE_ADMIN', 'ROLE_USER' ] }
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        login:
+            pattern: ^/api/v1/test/login
+            stateless: true
+            provider: backend_users
+            json_login:
+                check_path: /api/v1/test/login_check
+                success_handler: lexik_jwt_authentication.handler.authentication_success
+                failure_handler: lexik_jwt_authentication.handler.authentication_failure
+
+        api:
+            pattern: ^/api/v1/test
+            stateless: true
+            provider: backend_users
+            guard:
+                authenticators:
+                    - lexik_jwt_authentication.jwt_token_authenticator
+
+#        main:
+#            pattern: ^/api/v1/test/basic/test
+#            provider: backend_users
+#            http_basic:
+#                realm: Access to the staging site
+
+
+    access_control:
+        - { path: ^/api/v1/test/users, roles: ROLE_USER }
+        - { path: ^/api/v1/test, roles: ROLE_ADMIN }
