@@ -1,0 +1,17 @@
+security:
+  role_hierarchy:
+    !php/const App\Core\Vacancy\Enum\Role::EXPERT:
+      - !php/const App\Core\Vacancy\Enum\Role::MODERATOR
+      - !php/const App\Core\Vacancy\Enum\Permission::VACANCY_DELETE
+
+
+    !php/const App\Core\Vacancy\Enum\Role::MODERATOR:
+      - !php/const App\Core\Vacancy\Enum\Role::USER
+      - !php/const App\Core\Vacancy\Enum\Permission::VACANCY_CREATE
+      - !php/const App\Core\Vacancy\Enum\Permission::VACANCY_UPDATE
+
+
+    !php/const App\Core\Vacancy\Enum\Role::USER:
+      - !php/const App\Core\Vacancy\Enum\Permission::VACANCY_SHOW
+      - !php/const App\Core\Vacancy\Enum\Permission::VACANCY_VALIDATION
+      - !php/const App\Core\Vacancy\Enum\Permission::VACANCY_INDEX
