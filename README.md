@@ -44,11 +44,11 @@ all : prog1 prog2
 
 clean :
 
-    ...
-    
+...
+   
 distclean :
 
-    ...`
+... `
 
 ### _4. Использованные источники_ ###
 - http://drupal.org.ru/guide/composer/command
