@@ -5,12 +5,14 @@
 Она позволяет "обманывать" требования пакетов к среде выполнения.
 
 Например:
-`"config": {
+```
+"config": {
         "platform": {
             "php": "7.0.3"
         }
-    },`
--- заставит все пакеты считать, что в нашей системе установлена версия php = 7.0.3, 
+    },
+```
+— заставит все пакеты считать, что в нашей системе установлена версия php = 7.0.3, 
 хотя в реальности будет использовать реальный интерпретатор.
 
 Это гарантирует, что ни один пакет, требующий более PHP 7.0.3, 
@@ -24,7 +26,7 @@
 Если мы хотим обойти зависимости платформы, то нам следует воспользоваться командой
 `composer install --ignore-platform-reqs`
 
-Это игнорирование требований _php, hhvm, lib-* и ext-*_ 
+Это игнорирование требований `php, hhvm, lib-* и ext-*`
 и принудительная установка даже в том случае, если локальная машина не удовлетворяет требованиям. 
 
 ### _3. Каким образом в Makefile можно защититься от выполнения файла при передаче аргумента команде make?_ ###
@@ -34,7 +36,8 @@
 
 Мы можем поместить несколько .PHONY: в свой Makefile.
 
-`.PHONY: all
+```
+.PHONY: all
 
 all : prog1 prog2
 
@@ -48,12 +51,13 @@ clean :
    
 distclean :
 
-... `
+... 
+```
 
 ### _4. Использованные источники_ ###
-- http://drupal.org.ru/guide/composer/command
-- https://getcomposer.org/doc/06-config.md#platform
-- https://coderoad.ru
-- https://stackoverflow.com/questions/2145590/what-is-the-purpose-of-phony-in-a-makefile#:~:text=In%20terms%20of%20Make%2C%20a,%2C%20TAGS%20%2C%20info%20%2C%20check%20
-- https://coderoad.ru/38161810/Composer-Install-собственный-контейнер-с-Docker-отсутствующими-расширениями-PHP
+- [Комманды Composer](http://drupal.org.ru/guide/composer/command)
+- [Настройка Platform](https://getcomposer.org/doc/06-config.md#platform)
+- [IT форум](https://coderoad.ru)
+- [Информация о PHONY](https://stackoverflow.com/questions/2145590/what-is-the-purpose-of-phony-in-a-makefile#:~:text=In%20terms%20of%20Make%2C%20a,%2C%20TAGS%20%2C%20info%20%2C%20check%20)
+- [Информация о Platform](https://coderoad.ru/38161810/Composer-Install-собственный-контейнер-с-Docker-отсутствующими-расширениями-PHP)
 - Ваши лекции
