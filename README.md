@@ -43,8 +43,11 @@ all : prog1 prog2
 .PHONY: clean distclean
 
 clean :
+
     ...
+    
 distclean :
+
     ...`
 
 ### _4. Использованные источники_ ###
